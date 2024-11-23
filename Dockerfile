@@ -6,6 +6,3 @@ FROM quay.io/redhatproductsecurity/rapidast:2.8.0
 WORKDIR /opt/rapidast
 
 COPY ./config/rapidastConfig.yaml ./config/
-
-# Set the default command to execute rapidast.py
-#ENTRYPOINT ["/opt/rapidast/rapidast.py", "--config", "./config/rapidastConfig.yaml"]
